@@ -33,15 +33,15 @@ module.exports = {
 				createdAt: new Date().toString(),
 			};
 
-			chats = [chat, ...chats];
-			pubsub.publish(CHAT_CHANNEL, { messageSent: chat });
+			chats = [...chats, chat];
+			pubsub.publish(CHAT_CHANNEL, { newMessage: chat });
 
 			return chat;
 		}
 	},
 
 	Subscription: {
-		messageSent: {
+		newMessage: {
 			subscribe: (root, args, context) => {
 				return context.pubsub.syncIterator(CHAT_CHANNEL)
 			}

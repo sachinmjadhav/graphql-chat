@@ -16,6 +16,6 @@ module.exports = `
   }
 
   type Subscription {
-    messageSent: Chat
+    newMessage: Chat
   }
 `
