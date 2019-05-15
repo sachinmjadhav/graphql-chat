@@ -128,7 +128,7 @@ const App = ({ chatsQuery, createChatMutation }) => {
     if(chatsQuery.chats) {
       setChatList(chatsQuery.chats);
     }
-  }, [chatsQuery])
+  }, [chatsQuery.chats && chatsQuery.chats.length])
 
   useEffect(() => {
     subscribeToNewChats();

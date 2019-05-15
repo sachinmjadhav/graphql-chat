@@ -38,7 +38,7 @@ const Chat = (props) => {
       {/* <span style={style.time}>{new Date(props.chat.createdAt * 1000).getHours()} : {new Date(props.chat.createdAt * 1000).getMinutes()}</span> */}
         <h5
           style={
-            props.currentUser ? {...style.author, color: "#5887a7"} : style.author
+            !props.currentUser ? {...style.author, color: "#5887a7"} : style.author
           }
         >
           {props.chat.from}
