@@ -7,25 +7,25 @@ let chats = [
 		id: uuid(), 
 		from: 'Sachin',
 		content: "Hello. How are you today?",
-		createdAt: new Date('May 13, 2019 10:53:30')
+		createdAt: new Date('May 13, 2019 10:53:30').getTime()
 	},
 	{ 
 		id: uuid(),
 		from: 'Mark',
 		content: "Hey! I'm fine. Thanks for asking!",
-		createdAt: new Date('May 13, 2019 10:54:00')
+		createdAt: new Date('May 13, 2019 10:54:00').getTime()
 	},
 	{ 
 		id: uuid(), 
 		from: 'Sachin',
 		content: "Sweet! So, what do you wanna do today?",
-		createdAt: new Date('May 13, 2019 10:55:20')
+		createdAt: new Date('May 13, 2019 10:55:20').getTime()
 	},
 	{ 
 		id: uuid(),
 		from: 'Mark',
 		content: "Nah, I dunno. Play soccer.. or learn more coding perhaps?",
-		createdAt: new Date('May 13, 2019 10:56:50')
+		createdAt: new Date('May 13, 2019 10:56:50').getTime()
 	},
 ];
 
