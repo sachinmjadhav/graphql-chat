@@ -97,7 +97,7 @@ const NEW_CHAT_MUTATION = gql`
 `;
 
 const App = ({ chatsQuery, createChatMutation }) => {
-  const [from, setFrom] = useState('Sachin');
+  const [from, setFrom] = useState('');
   const [content, setContent] = useState('');
   const [chatList, setChatList] = useState([]);
 
