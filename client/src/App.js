@@ -152,6 +152,7 @@ const App = ({ chatsQuery, createChatMutation }) => {
       </div>
     )
   }
+
   return (
     <div style={style.wrapper}>
       <div style={style.chatWrapper}>
@@ -191,7 +192,6 @@ const App = ({ chatsQuery, createChatMutation }) => {
     </div>
   );
 }
-
 
 export default compose(
   graphql(CHATS_QUERY, { name: 'chatsQuery' }),
