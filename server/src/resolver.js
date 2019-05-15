@@ -7,25 +7,25 @@ let chats = [
 		id: uuid(), 
 		from: 'Sachin',
 		content: "Hello. How are you today?",
-		createdAt: new Date('May 13, 2019 10:53:30').toString()
+		createdAt: new Date('May 13, 2019 10:53:30')
 	},
 	{ 
 		id: uuid(),
 		from: 'Mark',
 		content: "Hey! I'm fine. Thanks for asking!",
-		createdAt: new Date('May 13, 2019 10:54:00').toString()
+		createdAt: new Date('May 13, 2019 10:54:00')
 	},
 	{ 
 		id: uuid(), 
 		from: 'Sachin',
 		content: "Sweet! So, what do you wanna do today?",
-		createdAt: new Date('May 13, 2019 10:54:20').toString()
+		createdAt: new Date('May 13, 2019 10:55:20')
 	},
 	{ 
 		id: uuid(),
 		from: 'Mark',
 		content: "Nah, I dunno. Play soccer.. or learn more coding perhaps?",
-		createdAt: new Date('May 13, 2019 10:54:50').toString()
+		createdAt: new Date('May 13, 2019 10:56:50')
 	},
 ];
 
@@ -43,7 +43,7 @@ module.exports = {
 				id,
 				content,
 				from,
-				createdAt: new Date().toString(),
+				createdAt: Date.now(),
 			};
 
 			chats = [...chats, chat];

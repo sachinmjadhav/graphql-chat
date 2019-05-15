@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 import { compose, graphql } from "react-apollo";
 import { gql } from "apollo-boost";
 import Signup from './components/Signup';
