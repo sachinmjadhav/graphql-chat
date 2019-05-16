@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 5px;
+  max-width: 90%;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 5px;
+  margin: 5px 0 0 5px;
+}
+
+.message {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0 0 5px;
+  background-color: #f2f2f2
+}
+
+.content {
+  padding: 5px;
+  margin: 5px;
+}

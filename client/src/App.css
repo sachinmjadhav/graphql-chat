@@ -1,0 +1,84 @@
+.wrapper {
+  background-color: #fff;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  padding: 0 15px;
+  min-width: 30%;
+  max-width: 500px;
+  max-height: 620px;
+}
+
+.signupWrapper {
+  padding: 50px;
+}
+
+.chatWrapper {
+  padding: 10px;
+}
+
+.chatTitleWrapper {
+  background-color: #6fb0dc;
+  border-bottom: 1px solid #5887a7;
+  padding: 20px 10px;
+}
+
+.chatTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.logout {
+  color: #5887a7;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right
+}
+
+.username {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.signinName {
+  color: #5887a7
+}
+
+.chatbox {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.chatInputWrapper {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.chatInput {
+  border: none;
+  border-top: 1px solid #333;
+  border-width: 1px;
+  border-radius: 0;
+  outline: none;
+  padding: 15px;
+  margin: 0;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 350px;
+    margin: 20% auto;
+  }
+}

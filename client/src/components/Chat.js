@@ -1,49 +1,26 @@
 import React from 'react';
+import './Chat.css'
 
 const style = {
   wrapper: {
     padding: 5,
-    display: 'grid',
     width: '90%',
-    gridTemplateColumns: 'auto auto',
-  },
-  author: {
-    fontSize: 16,
-    fontWeight: 'bolder',
-    padding: 5,
-    margin: '5px 0 0 5px'
-  },
-  message: {
-    fontSize: 14,
-    padding: 5,
-    borderRadius: 5,
-    margin: '5px 0 0 5px',
-    backgroundColor: '#f2f2f2'
-  },
-  time: {
-    padding: 3,
-    color: '#aaa',
-    float: 'right'
-  },
-  content: {
-    padding: 5,
-    margin: 5
   }
 }
 
 const Chat = (props) => {
   return (
     <div style={style.wrapper}>
-      <div style={props.currentUser ? {...style.message, backgroundColor: 'rgb(230, 230, 230)'} : style.message}>
-      {/* <span style={style.time}>{new Date(props.chat.createdAt * 1000).getHours()} : {new Date(props.chat.createdAt * 1000).getMinutes()}</span> */}
+      <div className="message" style={props.currentUser ? { backgroundColor: 'rgb(230, 230, 230)' } : { backgroundColor: '#f2f2f2' }}>
         <h5
+          className="author"
           style={
-            !props.currentUser ? {...style.author, color: "#5887a7"} : style.author
+            !props.currentUser ? { color: "#5887a7" } : { color: "black" }
           }
         >
           {props.chat.from}
         </h5>
-        <p style={style.content}>{props.chat.content}</p>
+        <p className="content">{props.chat.content}</p>
       </div>
     </div>
   )
